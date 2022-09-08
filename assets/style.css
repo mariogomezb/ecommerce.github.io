@@ -1,0 +1,124 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "nav-bar nav-bar nav-nombre nav-nombre"
+    "aside-bar aside-bar grilla grilla"
+    "footer footer footer footer";
+    }
+
+
+.nav-bar{
+    grid-area: nav-bar;
+    background-color: rgb(240, 7, 7);
+    display: flex;
+    color: white;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+lo{
+    padding: 10px;
+    border-top: solid 1px;
+}
+
+lo:hover{
+    background-color: rgb(240, 7, 7);
+    color: white;
+}
+.logo{
+    width: 200px;
+}
+
+.nav-nombre{
+    grid-area: nav-nombre;
+    background-color: rgb(240, 7, 7);
+    color: white;
+    text-align: center;
+}
+
+.nav-nombre h1{
+    margin-top: 60px;
+}
+
+.aside-bar{
+    grid-area: aside-bar;
+    justify-content: center;
+    align-content: center;
+}
+
+.grilla{
+    grid-area: grilla;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.producto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.producto img{
+    width: 300px;
+    text-align: center;
+    
+}
+
+.modelo{
+    text-align: center;
+}
+
+.precio{
+    text-align: center;
+}
+
+.botones{
+    
+}
+.boton{
+    background-color:rgb(240, 7, 7);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+
+.boton2{
+    background-color:white;
+    color: rgb(240, 7, 7);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    background-color: white;
+    color: rgb(240, 7, 7);
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(240, 7, 7);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
