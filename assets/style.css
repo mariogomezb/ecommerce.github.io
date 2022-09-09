@@ -2,9 +2,9 @@
 .grid-container {
     display: grid;
     grid-template-areas: 
-    "nav-bar nav-bar nav-nombre nav-nombre"
-    "aside-bar aside-bar grilla grilla"
-    "footer footer footer footer";
+    "nav-logo   nav-logo    nav-nombre  nav-nombre"
+    "aside-bar  grilla      grilla      grilla"
+    "footer     footer      footer      footer";
     }
 
 
@@ -23,8 +23,16 @@
     text-decoration: none;
 }
 
+li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(240, 7, 7);
+}
+
 lo{
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
     border-top: solid 1px;
 }
 
@@ -36,18 +44,32 @@ lo:hover{
     width: 200px;
 }
 
+.nav-bar{
+    grid-area: nav-bar;
+    display: flex;
+    background-color: rgb(240, 7, 7);
+    color: white;
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    grid-area: nav-logo;
+    background-color: rgb(240, 7, 7);
+}
+
 .nav-nombre{
     grid-area: nav-nombre;
     background-color: rgb(240, 7, 7);
     color: white;
-    text-align: center;
 }
+
 
 .nav-nombre h1{
     margin-top: 60px;
 }
 
 .aside-bar{
+    margin-top: 15px;
     grid-area: aside-bar;
     justify-content: center;
     align-content: center;
@@ -62,7 +84,7 @@ lo:hover{
 }
 
 .producto{
-    width: 100%;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -83,9 +105,6 @@ lo:hover{
     text-align: center;
 }
 
-.botones{
-    
-}
 .boton{
     background-color:rgb(240, 7, 7);
     color: white;
